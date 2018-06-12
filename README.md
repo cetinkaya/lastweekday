@@ -21,7 +21,7 @@ LastWeekday.of("June")
 require "lastweekday"
 
 LastWeekday.of(Date.new(2018, 6, 1))
-# Returns a Date object corresponding to the last weekday of June 2018
+# Returns a Date object corresponding to the last weekday of June 2018 (June 29, 2018)
 ```
 
 ## Last Occurrence of a Particular Day in a Month
@@ -32,10 +32,10 @@ lastweekday library also has methods to ask for the last occurrence of a particu
 require "lastweekday"
 
 Last.tuesday.of("June")
-# Returns a Date object corresponding to the last tuesday of June this year
+# Returns a Date object corresponding to the last Tuesday of June this year
 
 Last.tuesday.or.wednesday("June")
-# Returns a Date object corresponding to the last tuesday or wednesday
+# Returns a Date object corresponding to the last Tuesday or Wednesday
 # (whichever comes last) of June this year
 
 Last.day.of("June")
@@ -54,9 +54,9 @@ Last.new([0,2,4]).of("June")
 ```ruby
 require "lastweekday"
 
-puts Last.monday.of(Date.new(2018, 12)) # 2018-12-31 (December 31, 2018 is a monday)
+puts Last.monday.of(Date.new(2018, 12)) # 2018-12-31 (December 31, 2018 is a Monday)
 puts Last.saturday.of(Date.new(2019, 1)) # 2019-01-26
-puts Last.thu.or.fri.of(Date.new(2019, 1)) # 2019-01-31 (which is a thursday)
+puts Last.thu.or.fri.of(Date.new(2019, 1)) # 2019-01-31 (which is a Thursday)
 ```
 
 ## Installation
