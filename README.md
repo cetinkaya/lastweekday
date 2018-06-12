@@ -34,7 +34,7 @@ require "lastweekday"
 Last.tuesday.of("June")
 # Returns a Date object corresponding to the last Tuesday of June this year
 
-Last.tuesday.or.wednesday("June")
+Last.tuesday.or.wednesday.of("June")
 # Returns a Date object corresponding to the last Tuesday or Wednesday
 # (whichever comes last) of June this year
 
