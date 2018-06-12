@@ -1,8 +1,7 @@
 # lastweekday
 lastweekday provides a simple method to get the last weekday of a given month.
 
-
-# Examples
+## Examples
 
 ```ruby
 require "lastweekday"
@@ -25,3 +24,18 @@ LastWeekday.of(Date.new(2018, 6, 1))
 # Returns a Date object corresponding to last week day of June 2018
 ```
 
+## Installation
+
+A .gem file can be built by:
+
+```sh
+git clone https://github.com/cetinkaya/lastweekday.git
+cd lastweekday
+gem build lastweekday.gemspec
+```
+
+To install the local gem file, use:
+
+```sh
+gem install --local lastweekday-0.1.gem
+```
