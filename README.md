@@ -1,5 +1,5 @@
 # lastweekday
-lastweekday provides a simple method to get the last weekday of a given month.
+lastweekday provides a simple Ruby method to get the last weekday of a given month.
 
 ## Examples
 
