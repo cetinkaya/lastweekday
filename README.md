@@ -1,5 +1,5 @@
 # lastweekday
-lastweekday provides a simple Ruby method to get the last weekday of a given month.
+lastweekday provides Ruby methods to query nth occurrence of a given day in a given month. For example, you can get the last weekday of a given month. You can also ask for the first weekday or the 3rd Tuesday in a month.
 
 ## Examples
 
@@ -59,6 +59,10 @@ Second.sunday.of(5)
 
 Second.sunday.of(Date.new(2019, 5))
 # Returns a Date object corresponding to the 2nd Sunday of May 2019
+
+Nth.new(0, 2).of(Date.new(2019, 5))
+# Returns a Date object corresponding to the 2nd Sunday (0) of May 2019
+# Same as Second.sunday.of(Date.new(2019, 5))
 
 First.day.of("June")
 # Returns a Date object corresponding to the 1st date of June this year
