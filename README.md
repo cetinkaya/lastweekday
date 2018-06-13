@@ -65,7 +65,7 @@ Nth.new(0, 2).of(Date.new(2019, 5))
 # Same as Second.sunday.of(Date.new(2019, 5))
 
 First.day.of("June")
-# Returns a Date object corresponding to the 1st date of June this year
+# Returns a Date object corresponding to the 1st day of June this year
 
 First.sunday.or.monday.of(Date.new(2019, 6))
 # Returns a Date object corresponding to the first Sunday or Monday
